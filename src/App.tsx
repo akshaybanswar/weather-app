@@ -137,7 +137,7 @@ export function App() {
       };
       fetchWeatherDataByCoordinates();
     }
-  }, [lat, long]);
+  }, [lat, long, shouldFetchData]);
 
   useEffect(() => {
     const handleForecastSearch = async () => {
