@@ -1,4 +1,5 @@
 const apikey = 'b1de2c77d8d24c18a7b182510230106';
+// const apikey = process.env.REACT_APP_API_KEY;
 
 export const fetchCurrentWeatherData = async (query: string) => {
   const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apikey}&q=${query}&aqi=yes`);
